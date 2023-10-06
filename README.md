@@ -1,2 +1,2 @@
-# ces
-Course Enrollment System
+# ses
+Student Enrollment System
