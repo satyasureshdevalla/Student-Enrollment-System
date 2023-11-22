@@ -8,15 +8,13 @@ public class Course {
     @Id
     private String id;
 
-    private String courseid;
+    private String course_code;
 
-    private String coursename;
+    private String course_name;
 
-    private String grade;
+    private String description;
 
-    private String shortname;
-
-    private String isactive;
+    private String credit_hours;
 
     public Course() {
     }
@@ -29,44 +27,36 @@ public class Course {
         this.id = id;
     }
 
-    public String getCourseid() {
-        return courseid;
+    public String getCourse_code() {
+        return course_code;
     }
 
-    public void setCourseid(String courseid) {
-        this.courseid = courseid;
+    public void setCourse_code(String course_code) {
+        this.course_code = course_code;
     }
 
-    public String getCoursename() {
-        return coursename;
+    public String getCourse_name() {
+        return course_name;
     }
 
-    public void setCoursename(String coursename) {
-        this.coursename = coursename;
+    public void setCourse_name(String course_name) {
+        this.course_name = course_name;
     }
 
-    public String getGrade() {
-        return grade;
+    public String getDescription() {
+        return description;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getShortname() {
-        return shortname;
+    public String getCredit_hours() {
+        return credit_hours;
     }
 
-    public void setShortname(String shortname) {
-        this.shortname = shortname;
-    }
-
-    public String getIsactive() {
-        return isactive;
-    }
-
-    public void setIsactive(String isactive) {
-        this.isactive = isactive;
+    public void setCredit_hours(String credit_hours) {
+        this.credit_hours = credit_hours;
     }
 }
 

@@ -3,6 +3,7 @@ package edu.ucmo;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Document(collection = "student")
@@ -11,12 +12,19 @@ public class Student {
     private String id;
 
     private String username;
+
     private String password;
+
     private String name;
+
     private String email;
+
     private String contact_details;
-    private List<String> schedule;
+
+    private ArrayList<String> schedule;
+
     private String max_credits;
+
     private String current_term;
 
     public Student() {
@@ -70,11 +78,11 @@ public class Student {
         this.contact_details = contact_details;
     }
 
-    public List<String> getSchedule() {
+    public ArrayList<String> getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(List<String> schedule) {
+    public void setSchedule(ArrayList<String> schedule) {
         this.schedule = schedule;
     }
 
