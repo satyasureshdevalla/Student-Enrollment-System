@@ -24,11 +24,10 @@ class ListCourseComponent extends Component {
                         <table className = "table table-striped table-bordered">
                             <thead>
                                 <tr>
-                                    <th> Course Id</th>
+                                    <th> Course Code</th>
                                     <th> Course Name</th>
-                                    <th> Grade</th>
-                                    <th> Shortname</th>
-                                    <th> Isactive</th>
+                                    <th> Description </th>
+                                    <th> Credit Hours</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -36,11 +35,10 @@ class ListCourseComponent extends Component {
                                     this.state.courses.map(
                                         course =>
                                         <tr key = { course.id }>
-                                             <td> { course.courseid } </td>
-                                             <td> { course.coursename } </td>
-                                             <td> { course.grade }</td>
-                                             <td> { course.shortname }</td>
-                                             <td> { course.isactive }</td>
+                                             <td> { course.course_code } </td>
+                                             <td> { course.course_name } </td>
+                                             <td> { course.description }</td>
+                                             <td> { course.credit_hours }</td>
                                         </tr>
                                     )
                                 }
