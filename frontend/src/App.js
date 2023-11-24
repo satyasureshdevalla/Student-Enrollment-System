@@ -6,6 +6,8 @@ import HeaderComponent from './components/HeaderComponent';
 import ListCourseComponent from './components/ListCourseComponent';
 import ListStudentComponent from './components/ListStudentComponent';
 import ListAdminComponent from './components/ListAdminComponent';
+import ListDropComponent from './components/ListDropComponent';
+import ListEnrollComponent from './components/ListEnrollComponent';
 import FooterComponent from './components/FooterComponent';
 
 import Navbar from "./Navigation/Navbar.js";
@@ -21,6 +23,9 @@ function App() {
                          <Route path = "/" exact component = {ListCourseComponent}></Route>
                          <Route path = "/students" exact component = {ListStudentComponent}></Route>
                          <Route path = "/admins" exact component = {ListAdminComponent}></Route>
+                         <Route path = "/drops" exact component = {ListDropComponent}></Route>
+                         <Route path = "/enrolls" exact component = {ListEnrollComponent}></Route>
+
                     </Switch>
                 </div>
               <FooterComponent />
