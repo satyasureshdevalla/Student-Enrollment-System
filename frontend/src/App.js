@@ -8,6 +8,7 @@ import ListStudentComponent from './components/ListStudentComponent';
 import ListAdminComponent from './components/ListAdminComponent';
 import ListDropComponent from './components/ListDropComponent';
 import ListEnrollComponent from './components/ListEnrollComponent';
+import ListInstructorComponent from './components/ListInstructorComponent';
 import FooterComponent from './components/FooterComponent';
 
 import Navbar from "./Navigation/Navbar.js";
@@ -25,7 +26,7 @@ function App() {
                          <Route path = "/admins" exact component = {ListAdminComponent}></Route>
                          <Route path = "/drops" exact component = {ListDropComponent}></Route>
                          <Route path = "/enrolls" exact component = {ListEnrollComponent}></Route>
-
+                         <Route path = "/instructors" exact component = {ListInstructorComponent}></Route>
                     </Switch>
                 </div>
               <FooterComponent />

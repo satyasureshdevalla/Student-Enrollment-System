@@ -23,6 +23,9 @@ const Navbar = () => {
       <li className="nav-item">
          <a className="nav-link" href="http://localhost:3000/enrolls">Enrolls </a>
       </li>
+      <li className="nav-item">
+         <a className="nav-link" href="http://localhost:3000/instructors">Instructors </a>
+      </li>
     </ul>
   </div>
 </nav>
