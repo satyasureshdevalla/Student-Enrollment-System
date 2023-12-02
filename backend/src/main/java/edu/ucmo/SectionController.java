@@ -19,4 +19,6 @@ public class SectionController {
     public List<Section> getAllSections(){
         return sectionRepository.findAll();
     }
+
+
 }
